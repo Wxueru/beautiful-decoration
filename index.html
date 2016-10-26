@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>最美装修</title>
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<!--<link rel="stylesheet" href="index.css">-->
+        <script src="./libs/angular.js" charset="utf-8"></script>
+        <script src="./libs/angular-route.js" charset="utf-8"></script>
+        <script src="./libs/angular-css.js" charset="utf-8"></script>
+		<style type="text/css">
+			.index header{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 4.5rem;
+				background: #fafafa;
+			}
+			.index header div{
+				width: 17%;
+				float: left;
+				height: 100%;
+				text-align: center;
+				line-height: 4.5rem;
+				font-size: 1.6rem;
+				font-weight:600 ;
+				color: #333333;
+			}
+			.index .header-find{
+				width: 66%;
+			}
+			.index .head span{
+				margin-top: .5rem;
+				width: 3rem;
+				height: 3rem;
+				border: 1px solid lightblue;
+				border-radius:50% ;
+			}
+			.index .search span{
+				width: 3rem;
+				height: 4.5rem;
+				background-image:url(seach-img.png); 
+				background-repeat:no-repeat ;
+				background-size:3rem;
+				background-position: 0 .8rem;
+			}
+			
+			.index footer{
+				width: 100%;
+				height: 5rem;
+				background: white;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				display: flex;
+				justify-content: space-around;
+				border-top: 1px solid #dedede;
+			}
+			.index footer a{
+				flex-grow: 1;
+				text-align: center;
+				color: #767676;
+				font-size: 1rem;
+			}
+			.index footer a span{
+				margin-top: .5rem;
+				width: 2.5rem;
+				height: 2.5rem;
+				border: 1px solid lightcoral;
+			}
+		</style>
+	</head>
+	<body ng-app="myApp">
+		<div class="index">
+			<header>
+				<div class="head">
+					<span><img src="" alt="" /></span>
+				</div>
+				<div class="header-find">
+					发现
+				</div>
+				<div class="search">
+					<span></span>
+				</div>
+			</header>
+			
+			<div ng-view></div>
+			
+			<footer>
+				<a href="#find">
+					<span></span><p>发现</p></a>
+				<a href="#case">
+					<span></span><p>案例</p></a>
+				<a href="#diary">
+					<span></span><p>日记</p></a>
+				<a href="#inspiration">
+					<span></span><p>灵感</p></a>
+				<a href="#strategy">
+					<span></span><p>攻略</p></a>
+			</footer>
+		</div>
+		
+	</body>
+	<script src="route.js" charset="utf-8"></script>
+    <script src="find/js/find.js" charset="utf-8"></script>
+    <script src="case/js/case.js" charset="utf-8"></script>
+    <script src="diary/js/diary.js" charset="utf-8"></script>
+    <script src="inspiration/js/inspiration.js" charset="utf-8"></script>
+    <script src="strategy/js/strategy.js" charset="utf-8"></script>
+	<script type="text/javascript">
+//		var font = $(window).width()
+//			var size = font / 36 ;
+//			$('html').css({
+//			   	fontSize:size
+//			})
+//			console.log(size)
+	</script>
+</html>

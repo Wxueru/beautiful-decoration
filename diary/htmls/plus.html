@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title></title>
+		<style type="text/css">
+			html{
+				display: block;
+			    position: relative;
+			    width: 100%;
+			    height: 100%;
+			    margin: auto;
+			    font-size: 10px;
+			}
+			html,body{
+				font: '微软雅黑',Helvetica,Tahoma,Arial,'华文细黑',sans-serif;
+			    color: #333;
+			    background-color: white;
+			}
+			*{
+				margin: 0;
+				padding: 0;
+			    box-sizing: border-box;
+			}
+			@media screen and (-webkit-min-device-pixel-ratio: 2){
+					html {
+				    max-width: 480px;
+				}
+			}
+			a{
+				text-decoration: none;
+			}
+			ul,span{
+				display: inline-block;
+				list-style: none;
+			}
+			li{
+				float: left;
+			}
+			
+			
+			.plus{
+				width: 100%;
+				
+			}
+			.plus header{
+				width: 100%;
+				height: 4.5rem;
+				background-color: #F8F8F8;
+				border-bottom:2px solid #E6EEE1 ;
+				padding-top: 1.7rem;
+			}
+			.plus header span{
+				width: 15%;
+				float: left;
+				font-weight:600 ;
+				font-size: 1.3rem;
+				color: #979797;
+				line-height: 1.6rem;
+			}
+			.plus header p{
+				float: left;
+				width: 70%;
+				font-weight:600 ;
+				font-size: 1.6rem;
+				text-align: center;
+			}
+			.plus header img{
+				float: right;
+				width: 1.2rem;
+			}
+			.plus .tishi{
+				width: 100%;
+				height: 4.1rem;
+				color: #636D62;
+				font-size: 1.3rem;
+				background-color: #EFFCE8;
+				text-align: center;
+				line-height: 4rem;
+			}
+			.plus .banner{
+				width: 100%;
+				height: 7.3rem;
+				margin-bottom: 1.6rem;
+			}
+			.plus .banner img{
+				width: 100%;
+			}
+			.plus>ul{
+				width: 100%;
+				padding:0 1.5rem;
+			}
+			.plus li{
+				float: none;
+				list-style-image: url(../../img/);
+				width: 100%;
+				height: 5rem;
+				line-height: 5rem;
+				font-size: 1.3rem;
+				border-bottom: 2px solid #E7ECE6;
+				color: #323431;
+				word-spacing: .3rem;
+			}
+			.plus li span{
+				float: right;
+				outline: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="plus">
+			<header>
+				<span><img src="../../img/arrow_left.png" alt="" /></span>
+				<p>日记信息编辑</p>
+				<span>保存</span>
+			</header>
+			
+			<div class="tishi">
+				补充完整信息，或可加入精选行列，和更多惊喜等着您！
+			</div>
+			<div class="banner">
+				<img src="../../img/bid_ad1.png" alt="" />
+			</div>
+			<ul>
+				<li>日记标题 <span contenteditable >[未填写]</span><!--span点击后可以编辑文字--></li>
+				<li>面积 <span contenteditable >[未填写] <img src="../../img/icon_to_right.png" alt="" /></span></li>
+				<li>户型 <span contenteditable >[未填写] <img src="../../img/icon_to_right.png" alt="" /><img src="" alt="" /></span></li>
+				<li>风格 <span contenteditable >[未填写] <img src="../../img/icon_to_right.png" alt="" /></span></li>
+				<li>所在城市 <span contenteditable >[北京] <img src="../../img/icon_to_right.png" alt="" /></span></li>
+				<li>装修预算[万元] <span contenteditable >[未填写] <img src="../../img/icon_to_right.png" alt="" /></span></li>
+			</ul>
+		</div>
+	</body>
+</html>
