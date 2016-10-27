@@ -35,6 +35,14 @@ app.config(['$routeProvider',function($routeProvider){
 		templateUrl: ' ./strategy/htmls/strategy-demo.html',
 		controller:'strategy-demoCtrl'
 	})
+	.when('/oneself',{
+		templateUrl: ' ./oneself/htmls/oneself.html',
+		controller:'oneselfCtrl'
+	})
+	.when('/search',{
+		templateUrl: ' ./search/htmls/search.html',
+		controller:'searchCtrl'
+	})
 	.otherwise({
 		redirectTo:'/'    //重定向到首页
 	})
