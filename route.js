@@ -27,16 +27,16 @@ app.config(['$routeProvider',function($routeProvider){
 		templateUrl: ' ./inspiration/htmls/inspiration.html',
 		controller:'inspirationCtrl'
 	})
-	.when('/strategy-design',{
-		templateUrl: ' ./strategy/htmls/strategy-design.html',
-		controller:'strategy-designCtrl'
+	.when('/oneself',{
+		templateUrl: ' ./oneself/htmls/oneself.html',
+		controller:'oneselfCtrl'
 	})
-	.when('/strategy-demo',{
-		templateUrl: ' ./strategy/htmls/strategy-demo.html',
-		controller:'strategy-demoCtrl'
+	.when('/search',{
+		templateUrl: ' ./search/htmls/search.html',
+		controller:'searchCtrl'
 	})
 	.otherwise({
 		redirectTo:'/'    //重定向到首页
 	})
-
+	
 }]);
