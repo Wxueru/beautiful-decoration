@@ -1,7 +1,151 @@
+
+/*设置默认字体大小*/
+@media only screen and (min-width:320px ) {
+	body,html {
+		font-size: 9px;
+	}
+}
+
+@media only screen and (min-width:360px ) {
+	body,html {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width:414px ) {
+	body,html {
+		font-size: 11.5px;
+	}
+}
+@media only screen and (min-width: 640px) {
+	body,html {
+		font-size: 21px;
+	}
+}
+a{
+    color: #494949;
+}
 .strategy{
+    width: 100%;
+    margin: 0 auto;
+}
+.strategy::before{
+    content: "";
+    display: block;
+    height: 4.5rem;
+    background-color: #fafafa;
+}
+.strategy::after{
+    content: "";
+    display: block;
+    height: 5rem;
+}
+.strategy .strategy-nav{
+    width: 100%;
+    height: 24rem;
+}
+.strategy-nav ul{
+    margin: 0 0.8rem;
+    height: 100%;
+}
+.strategy-nav ul li{
+    width: 25%;
+    float: left;
+    height: 12rem;
+    padding: 0.8rem 1.2rem;
+    box-sizing: border-box;
+}
+.strategy-nav ul li a{
+    display: inline-block;
+    text-align: center;
+}
+.strategy-nav ul li a img{
+    border-radius: 50%;
+    width: 100%;
+}
+.strategy-nav ul li a p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.strategy-main{
+    width: 100%;
+}
+.strategy-main section{
+    width: 100%;
+    height: 37.6rem;
+    border-top: 1px solid #ccc;
+}
+.strategy-main section a{
+	display: inline-block;
 	width: 100%;
-	height: 100%;
-	color: lightgray;
-	font-size: 50px;
-	margin-top: 5rem;
+	height: 37.6rem;
+}
+.strategy-main section .str-main-container{
+    margin: 0.8rem;
+}
+.str-main-container .str-main-big{
+    position: relative;
+    width: 100%;
+    height: 19.3rem;
+}
+.str-main-container .str-main-big img{
+    width: 100%;
+    height: 100%;
+}
+.str-main-container .str-main-big div{
+    position: absolute;;
+    left: 1rem;
+    top: 0.9rem;
+	padding: 0 0.6rem;
+    line-height: 2rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0.9rem;
+    color: white;
+}
+.str-main-container .str-main-big div span{
+	margin-right: 0.3rem;
+}
+.str-main-container .str-main-san{
+    margin:0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.str-main-container .str-main-san section{
+    position: relative;
+    /*width: 10.9rem;*/
+    height: 10.9rem;
+    width: 32%
+}
+.str-main-container .str-main-san section img{
+    width: 100%;
+    height: 10.9rem;
+}
+.str-main-container .str-main-san section span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    padding: 0 0.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 0.9rem;
+}
+.str-main-container .str-main-san section div{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 10.9rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.str-main-container h3{
+    font-size: 1.6rem;
+    color: #666;
+    line-height: 4rem;
 }
