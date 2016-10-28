@@ -1,7 +1,256 @@
-.diary{
+/* =============================  libry ==========================  */
+*{
+	margin: 0;
+	padding: 0;
+
+}
+/*=================================精选==============================*/
+.winnow{
+	width: 100%;
+
+}
+/*=================================导航====================================*/
+nav{
+	position: fixed;
+	z-index: 6;
+	width: 100%;
+	height: 3.2rem;
+}
+.nav{
+	width: 100%;
+	height: 3.2rem;
+}
+nav>ul{
+	float: left;
 	width: 100%;
 	height: 100%;
-	color: lightgray;
-	font-size: 50px;
-	margin-top: 10rem;
+	margin: 0 auto;
+	overflow: auto;
+	border-top: .1rem solid rgb(232,232,232);
+	border-bottom: .1rem solid rgb(232,232,232);
+}
+nav>ul li{
+	float: left;
+	padding: 0 3%;
+	width: 33.3%;
+	height: 100%;
+	line-height: 3.2rem;
+	text-align: center;
+	list-style: none;
+	overflow: auto;
+	box-sizing: border-box;
+	background: rgb(245,245,245);
+}
+nav>ul li:nth-child(2){
+	border-left: .1rem solid rgb(232,232,232);
+	border-right: .1rem solid rgb(232,232,232);
+}
+.rack{
+	height: 13%;
+	width: 12%;
+	margin-bottom: 2%;
+
+}
+nav>ul li a{
+	text-decoration: none;
+	font-size: 100%;
+	color: rgb(102,102,102);
+}
+/*==================================主体=============================*/
+.winnow .banner{
+	width: 100%;
+}
+.winnow section{
+	padding:1% .8rem;
+}
+.winnow .borderRadius{
+	position: relative;
+	z-index: 1;
+	width: 44%;
+	height: 1.4rem;
+	border: .1rem solid #969D9F;
+	border-radius: 3rem;
+	background: #969D9F;
+	opacity: 0.7;
+	top:2rem;
+	left:.5rem;
+	color:white;
+	font-weight: bold;
+}
+.winnow .bgImg img{
+	position: relative;
+	width: 100%;
+	margin-top: -3%;
+	vertical-align: middle;
+}
+.winnow .left{
+	z-index:2;
+	position:relative;
+	top: 14%;
+	left: 3%;
+	margin:0 .2rem;
+}
+.winnow .left>img{
+	width:13%;
+	vertical-align: middle;
+}
+.winnow .right{
+	z-index:2;
+	position:absolute;
+	top: 10%;
+	left: 60%;
+	margin:0 .2rem;
+}
+.winnow span{
+	font-size: 80%;
+}
+.winnow .right>img{
+	width:24%;
+	vertical-align: middle;
+}
+
+.imgNav{
+	padding: 2%;
+	margin-top: -16%;
+	width: 132%;
+	z-index: 5;
+	position: relative;
+	top: 35%;
+	left: 0;
+	background: transparent;
+	box-sizing: border-box;
+
+}
+.imgNav>img{
+	float: left;
+	overflow: auto;
+	width: 10%;
+	padding-right: 1.5%;
+	margin-top: -4%;
+	margin-left: 2%;
+}
+.white{
+	width: 70%;
+	font-size: 100%;
+	color: #fff;
+	margin-top: -6.5%;
+	margin-left: 14%;
+	padding-bottom: 12%;
+}
+.white2{
+	width: 70%;
+	font-size: 100%;
+	color: #fff;
+	margin-top: -6.5%;
+	margin-left: 14%;
+}
+
+/*============================最新===========================*/
+.new{
+	width: 100%;
+	/*display: none;*/
+}
+.new.banner{
+	width: 100%;
+	height: 45.5rem;?
+	box-sizing: border-box;
+	border-top: .3rem solid #e5e5e5;
+	border-bottom: .3rem solid #e5e5e5;
+}
+.new .banner section{
+	float: left;
+	width: 100%;
+	overflow: auto;
+	border-left: .6rem solid #e5e5e5;
+	border-right: .6rem solid #e5e5e5;
+	border-top: .3rem solid #e5e5e5;
+	border-bottom: .3rem solid #e5e5e5;
+	box-sizing: border-box;
+	background: #FFFFFF;
+}
+.new .banner section .title{
+	width: 100%;
+	height: 6rem;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+.new .banner section .title img{
+	float: left;
+	padding: .4rem;
+	box-sizing: border-box;
+}
+.new .banner section .title h2{
+	padding: .6rem .7rem;
+	display: inline-block;
+}
+.new .banner section .title span{
+	padding: .7rem;
+}
+.new .banner section .pics{
+	margin: 1.5rem 0;
+	display: table;
+}
+.new .banner section .pics>a>img{
+	float: left;
+
+	width: 29%;
+	padding:2%;
+
+}
+.new .banner section .text{
+	margin: 1.5rem 0;
+	display: table;
+}
+.new .text p {
+	margin: 5%;
+	box-sizing: border-box;
+}
+.new .green{
+	margin: 0 .5rem;
+	color:#7CB342 ;
+}
+.new nav{
+	margin: 0 .5rem;
+}
+.new .left{
+	float: left;
+	overflow: auto;
+	height: 1.5rem;
+	width: 17%;
+	margin: .5rem;
+	padding:0 .4rem;
+	border: 1px solid #969d9f;
+	border-radius: 3rem;
+	background: #969d9f;
+}
+.new .left img{
+	width: 45%;
+	line-height: 1.5rem;
+	vertical-align: middle;
+}
+.new .white{
+	color: white;
+	font-size: .2rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+}
+.new .right{
+	float: right;
+}
+.new .right img{
+	width: 12%;
+	line-height: 2.4rem;
+	vertical-align: middle;
+	margin-left: .7rem;
+}
+.new a{
+	text-decoration: none;
+}
+.new .right span{
+
+	line-height: 2.4rem;
+	margin-right: 2.1rem;
+}
+.new .grey{
+	color: #969d9f;
 }
