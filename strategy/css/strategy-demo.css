@@ -20,7 +20,7 @@ a{
     box-sizing: border-box;
     font-size: 1rem;
 }
-.str-demo-header > div > span{
+.str-demo-header > div > a{
     display: inline-block;
     width: 1rem;
     height: 1rem;

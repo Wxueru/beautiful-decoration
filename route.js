@@ -43,6 +43,10 @@ app.config(['$routeProvider',function($routeProvider){
 		templateUrl: ' ./search/htmls/search.html',
 		controller:'searchCtrl'
 	})
+	.when('/designer',{
+		templateUrl: ' ./find/htmls/designer.html',
+		controller:'designerCtrl'
+	})
 	.otherwise({
 		redirectTo:'/'    //重定向到首页
 	})

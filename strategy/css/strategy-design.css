@@ -1,13 +1,4 @@
-/**{
-    margin: 0;
-    padding: 0;
-}
-html,body{
-    font-family: "微软雅黑";
-}
-ul li{
-    list-style: none;
-}*/
+
 a{
     color: #494949;
 }
@@ -28,7 +19,7 @@ a{
     font-size: 1.4rem;
     text-align: center;
 }
-.design-header h3 span{
+.design-header h3 a{
     position: absolute;
     left: 1.6rem;
     top: 1.6rem;

@@ -10,10 +10,10 @@ app.controller("strategy-demoCtrl", function ($scope, $css) {
             $('.str-demo-header').css({'background':'rgba(255, 255, 255,' + top + ')'});
             $('.str-demo-enjoy .str-demo-eimg1').show();
             $('.str-demo-enjoy .str-demo-eimg2').hide();
-            $('.str-demo-header>div>span').css({'border-color':'white'});
+            $('.str-demo-header>div>a').css({'border-color':'white'});
             $('.str-demo-enjoy').css({'color':'white'});
             if($(window).scrollTop()>10){
-                $('.str-demo-header>div>span').css({'border-color':'#7db444'});
+                $('.str-demo-header>div>a').css({'border-color':'#7db444'});
                 $('.str-demo-enjoy .str-demo-eimg1').hide();
                 $('.str-demo-enjoy .str-demo-eimg2').show();
                 $('.str-demo-enjoy').css({'color':'#7db444'});
