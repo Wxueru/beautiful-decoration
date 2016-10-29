@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.ECshop{
+	width: 100%;
+	/*display: none;*/
+}
+.ECshop header{
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 4.5rem;
+	background: #F5F5F5;
+	border-bottom: .rem solid #AAAAAA;
+}
+.ECshop header img{
+	vertical-align: middle;
+}
+.ECshop .left3{
+	float: left;
+	width: 20%;
+	line-height: 4.5rem;
+	text-align: center;
+}
+.ECshop .left33{
+	float: left;
+	width: 60%;
+	line-height: 4.5rem;
+	text-align: center;
+}
+.ECshop .right3{
+	float: right;
+	width: 20%;
+	line-height: 4.5rem;
+}
+.ECshop .right3 .greenb{
+	color: #79B23F;
+	font-size: 1.3rem;
+}
+.ECshop .my::before{
+	content: "";
+	display: block;
+	height: 4.5rem;
+}
+.ECshop .lvjian{
+	width: 15%;
+}
+.ECshop .l{
+	padding-left: 15%;
+}
+
+.ECshop .h{
+	height: 5rem;
+}
+.ECshop .f{
+	height: 10rem;
+}
+.my{
+	width: 100%;
+	height: 8.5rem;
+	border-bottom: .1rem solid #AAAAAA;
+}
+.mine{
+	width: 100%;
+	padding:1rem 2%;
+	font-size: 1.6rem;
+}
+.left{
+	width: 60%;
+	float: left;
+	overflow: hidden;
+	padding: 5%;
+}
+.left2{
+	width: 86%;
+	float: left;
+	overflow: hidden;
+	padding: 5%;
+	margin: 5%;
+}
+.left img{
+	float: left;
+	width: 40%;
+}
+.left>span{
+	padding-left: 5%;
+	line-height: .3rem;
+	font-size: 70%;
+}
+.right{
+	width: 28%;
+	padding:4.5% 5%;
+	margin-right: 5%;
+	float: right;
+	overflow: hidden;
+}
+.bx{
+	margin-top: 5%;
+	border: .1rem solid #70994A;
+}
+.green{
+	color: #70994A;
+	font-size: 90%;
+}
+.grey{
+	color: #AAAAAA;
+	width: 35%;
+}
+.tab{
+	width: 100%;
+	border-bottom: .1rem solid #AAAAAA;
+}
+.tab ul{
+	width: 100%;
+	height: 4rem;
+	padding: 5%;
+}
+.tab ul li{
+	float:left;
+	width: 50%;
+	text-align: center;
+	font-size: 2rem;
+	overflow: hidden;
+}
+.tab ul div{
+	width: 50%;
+	height: .3rem;
+	float: left;
+	overflow: hidden;
+	margin: 0 3% ;
+	background: #70994A;
+}
+.pic-li{
+	width: 100%;
+}
+.right2{
+	width: 28%;
+	padding:4.5% 5%;
+	margin-right: 5%;
+	float: right;
+	overflow: hidden;
+}
+.pic-li ul{
+	width: 100%;
+}
+.pic-li ul li{
+	float: left;
+	overflow: hidden;
+	width: 50%;
+}
+.imgb{
+	width: 100%;
+}

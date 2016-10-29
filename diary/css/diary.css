@@ -1,163 +1,239 @@
-/* =============================  libry ==========================  */
 *{
 	margin: 0;
 	padding: 0;
-
+	box-sizing: border-box;
 }
-/*=================================精选==============================*/
-.winnow{
+.libry{
 	width: 100%;
-
+	height:100%;
 }
-/*=================================导航====================================*/
-nav{
+
+.libry header{
 	position: fixed;
-	z-index: 6;
+	left: 0;
+	top: 0;
 	width: 100%;
-	height: 3.2rem;
+	height: 4.5rem;
+	background: #fafafa;
+	z-index: 5;
 }
-.nav{
-	width: 100%;
-	height: 3.2rem;
-}
-nav>ul{
+.libry header a{
 	float: left;
+	margin-left: .5rem;
+	height: 4.5rem;
+	width: 17%;
+}
+	.libry header a img{
+		width: 100%;
+}
+.libry .header-sec{
+	width: 50%;
+	margin: 0 6%;
+	border-radius: 5px;
+	float: left;
+	height: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight:600 ;
+	color: #333333;
+}
+.libry .header-sec p{
+	width: 100%;
+	margin-top: .5rem;
+	height: 3rem;
+	line-height: 3rem;
+	
+}
+.libry .header-sec p span{
+	width:50%;
+	float: left;
+	background-color: #c0c0c0;
+	height: 100%;
+	text-align:center;
+	color: white; 
+	
+}
+.libry .header-sec p span:nth-child(1){
+border-top-left-radius: 1.7rem;
+	border-bottom-left-radius: 1.7rem;
+	background-color: #96C85C;
+}
+.libry .header-sec span:nth-child(2){
+	background-color: #c0c0c0;
+	border-top-right-radius: 1.7rem;
+	border-bottom-right-radius: 1.7rem;
+}
+.libry .head span{
+	margin-top: .5rem;
+	width: 3rem;
+	height: 3rem;
+	border: 1px solid lightblue;
+	border-radius:50% ;
+	}
+.libry .search span{
+	width: 3rem;
+	height: 4.5rem;
+	background-image:url(../../img/seach-img.png);
+	background-repeat:no-repeat ;
+	background-size:3rem;
+	background-position: 0 .8rem;
+	}
+
+
+.libry nav{
+	/*position: fixed;*/
+	z-index: 1;
+	width: 100%;
+	height: 3.2rem;
+}
+.libry nav>ul{
+	display: inline-block;
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
-	overflow: auto;
-	border-top: .1rem solid rgb(232,232,232);
-	border-bottom: .1rem solid rgb(232,232,232);
-}
-nav>ul li{
+	list-style: none;
+	}
+.libry nav>ul li{
 	float: left;
 	padding: 0 3%;
 	width: 33.3%;
 	height: 100%;
 	line-height: 3.2rem;
 	text-align: center;
-	list-style: none;
 	overflow: auto;
-	box-sizing: border-box;
 	background: rgb(245,245,245);
 }
-nav>ul li:nth-child(2){
+.libry nav>ul li:nth-child(2){
 	border-left: .1rem solid rgb(232,232,232);
 	border-right: .1rem solid rgb(232,232,232);
 }
-.rack{
-	height: 13%;
-	width: 12%;
-	margin-bottom: 2%;
+.libry nav>ul li a img{
 
+	width: 12%;
+	height: .5rem;
+	margin-top: .5rem;
 }
-nav>ul li a{
+.libry nav>ul li a{
+	display: inline-block;
+	width: 100%;
+	height: 3.2rem;
 	text-decoration: none;
-	font-size: 100%;
+	font-size: 1.4rem;
 	color: rgb(102,102,102);
 }
 /*==================================主体=============================*/
-.winnow .banner{
+
+.libry .select-data{
 	width: 100%;
-}
-.winnow section{
-	padding:1% .8rem;
-}
-.winnow .borderRadius{
-	position: relative;
-	z-index: 1;
-	width: 44%;
-	height: 1.4rem;
-	border: .1rem solid #969D9F;
-	border-radius: 3rem;
-	background: #969D9F;
-	opacity: 0.7;
-	top:2rem;
-	left:.5rem;
-	color:white;
-	font-weight: bold;
-}
-.winnow .bgImg img{
-	position: relative;
-	width: 100%;
-	margin-top: -3%;
-	vertical-align: middle;
-}
-.winnow .left{
-	z-index:2;
-	position:relative;
-	top: 14%;
-	left: 3%;
-	margin:0 .2rem;
-}
-.winnow .left>img{
-	width:13%;
-	vertical-align: middle;
-}
-.winnow .right{
-	z-index:2;
-	position:absolute;
-	top: 10%;
-	left: 60%;
-	margin:0 .2rem;
-}
-.winnow span{
-	font-size: 80%;
-}
-.winnow .right>img{
-	width:24%;
-	vertical-align: middle;
+	margin-top: 8rem;
+	padding: .5rem;
+	display: none;
 }
 
-.imgNav{
-	padding: 2%;
-	margin-top: -16%;
-	width: 132%;
-	z-index: 5;
+.libry .select-data ul{
+	display: inline-block;
+	width: 100%;
+	list-style: none;
+}
+.libry .select-data ul li{
+	width: 100%;
+	/*height: 25rem;*/
 	position: relative;
-	top: 35%;
+	margin-bottom:1rem; 
+}
+.libry .select-data ul li>div p {
+	width: 100%;
+}
+.libry .select-data ul li p>img{
+	width: 100%;
+}
+.libry .select-data ul li>div{
+	position: absolute;
+	top: .5rem;
+	left: 1rem;
+	background: rgba(111,111,111,.5);
+	width: 30%;
+	margin-right: .5rem;
+	text-align:center;
+	color: white;
+	font-size: 1rem;
+	border-radius: 10px;
+}
+.libry .select-data ul li>div p{
+	width: 100%;
+	height: 100%;
+	line-height: 2.5rem;
+}
+.libry .select-data ul li>div>p span{
+	display: inline-block;
+	width: 50%;
+}
+
+.libry .select-data ul section{
+	width: 100%;
+	height: 5rem;
+	color: white;
+	position: absolute;
+	bottom: 0;
 	left: 0;
-	background: transparent;
-	box-sizing: border-box;
+}
+.libry .select-data ul section>p{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.libry .select-data ul section>p span{
+	display: inline-block;
+	float: left;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: block;
 
 }
-.imgNav>img{
-	float: left;
-	overflow: auto;
-	width: 10%;
-	padding-right: 1.5%;
-	margin-top: -4%;
-	margin-left: 2%;
+.libry .select-data ul section>p span img{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
 }
-.white{
-	width: 70%;
-	font-size: 100%;
-	color: #fff;
-	margin-top: -6.5%;
-	margin-left: 14%;
-	padding-bottom: 12%;
+.libry .select-data ul section>p img{
+	width: 100%;
 }
-.white2{
+.libry .select-data ul section>div {
 	width: 70%;
-	font-size: 100%;
-	color: #fff;
-	margin-top: -6.5%;
-	margin-left: 14%;
+	margin-left: 20%;
+}
+.libry .select-data ul section>div p{
+	width: 100%;
+	height: 2rem;
+}
+
+.libry .select-data ul section>div p:nth-child(1){
+	font-size: 1.6rem;
+}
+}
+.libry .select-data ul section>div p:nth-child(2){
+	height: 1.8rem;
+	padding-top: .5rem;
+	font-size: 1.2rem;
+}
+
+.libry .heaser-sec>p span{
+	display: none;
 }
 
 /*============================最新===========================*/
-.new{
-	width: 100%;
-	/*display: none;*/
+
+.libry .new{
+	margin-top: 7.7rem;
 }
-.new.banner{
+.libry .new .banner{
 	width: 100%;
 	height: 45.5rem;?
 	box-sizing: border-box;
 	border-top: .3rem solid #e5e5e5;
 	border-bottom: .3rem solid #e5e5e5;
 }
-.new .banner section{
+.libry .new .banner section{
 	float: left;
 	width: 100%;
 	overflow: auto;
@@ -168,51 +244,46 @@ nav>ul li a{
 	box-sizing: border-box;
 	background: #FFFFFF;
 }
-.new .banner section .title{
+.libry .new .banner section .title{
 	width: 100%;
-	height: 6rem;
+	
 	padding: 1rem;
 	box-sizing: border-box;
 }
-.new .banner section .title img{
-	float: left;
+.libry .new .banner section .title img{
+	display: block;
+	width: 30%;
 	padding: .4rem;
 	box-sizing: border-box;
 }
-.new .banner section .title h2{
+.libry .new .banner section .title h2{
 	padding: .6rem .7rem;
-	display: inline-block;
 }
-.new .banner section .title span{
+.libry .new .banner section .title span{
+	display: block;
 	padding: .7rem;
 }
-.new .banner section .pics{
+.libry .new .banner section .pics{
+	width: 100%;
 	margin: 1.5rem 0;
-	display: table;
 }
-.new .banner section .pics>a>img{
+.libry .new .banner section .pics>a>img{
 	float: left;
-
 	width: 29%;
+	height: 7rem;
 	padding:2%;
 
 }
-.new .banner section .text{
+.libry .new .banner section .text{
+	width: 100%;
 	margin: 1.5rem 0;
-	display: table;
 }
-.new .text p {
-	margin: 5%;
-	box-sizing: border-box;
-}
-.new .green{
-	margin: 0 .5rem;
-	color:#7CB342 ;
-}
-.new nav{
+.libry .new nav{
+	width: 100%;
+	height: 2.5rem;
 	margin: 0 .5rem;
 }
-.new .left{
+.libry .new .left{
 	float: left;
 	overflow: auto;
 	height: 1.5rem;
@@ -223,34 +294,36 @@ nav>ul li a{
 	border-radius: 3rem;
 	background: #969d9f;
 }
-.new .left img{
-	width: 45%;
+.libry .new .left img{
+	width: 50%;
 	line-height: 1.5rem;
 	vertical-align: middle;
 }
-.new .white{
+.libry .new .white{
+	display: inline-block;
+	width: 45%;
 	color: white;
 	font-size: .2rem;
 	font-weight: bold;
 	line-height: 1.5rem;
 }
-.new .right{
+.libry .new .right{
 	float: right;
 }
-.new .right img{
+.libry .new .right img{
 	width: 12%;
 	line-height: 2.4rem;
 	vertical-align: middle;
 	margin-left: .7rem;
 }
-.new a{
+.libry .new a{
 	text-decoration: none;
 }
-.new .right span{
+.libry .new .right span{
 
 	line-height: 2.4rem;
 	margin-right: 2.1rem;
 }
-.new .grey{
+.libry .new .grey{
 	color: #969d9f;
 }

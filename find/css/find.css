@@ -73,6 +73,10 @@
 	border-radius:50%;
 	border: 1px solid lightcoral;
 }
+.find .works .works-designer>p a img{
+	width: 100%;
+	border-radius:50%;
+}
 .find .works .works-designer>div{
 	width: 70.8%;
 	float: left;

@@ -1,0 +1,34 @@
+{
+	"info":[
+		{
+			"name":"胡冰",
+			"city":"上海"
+		}
+	],
+	"showImg":[
+		{
+			"img":"http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup2%2FM00%2F1C%2FB6%2FCgooeVdqLbOYxPpaAAakttnwt8I194_1500x1500.jpg",
+			"description":"纷蓝"
+		},	
+		{
+			"img":"http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup2%2FM00%2F1C%2FB6%2FCgooeVdqLY673n8HAAUYb_HY_go996_1500x1500.jpg",
+			"description":"纷蓝"
+		},	
+		{
+			"img":"http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup2%2FM00%2F1C%2FBE%2FCgooeFdqLa2GPSHbAAbN9ZaICos679_1500x1500.jpg",
+			"description":"纷蓝"
+		},	
+		{
+			"img":"http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup2%2FM00%2F1C%2FBE%2FCgooeFdqLbnaK76GAAU5polFApk847_1500x1500.jpg",
+			"description":"纷蓝"
+		},	
+		{
+			"img":"http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup2%2FM00%2F1C%2FBE%2FCgooeFdqLZuFvZ7DAAUmodATbQc068_1500x1500.jpg",
+			"description":"纷蓝"
+		},	
+		{
+			"img":"http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup2%2FM00%2F1C%2FBE%2FCgooeFdqLYjui9cLAAUV3nKQSB0553_1500x1500.jpg",
+			"description":"纷蓝"
+		}
+	]
+}

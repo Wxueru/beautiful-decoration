@@ -1,5 +1,27 @@
-<div class="inspiration">
-	
-	inspiration
-	
-</div>
+
+<!--导航列表-->
+<nav>
+	<ul>
+		<li><a href="#">综合排序 <img class="rack" src="inspiration/imgs/case_03.png"/></a></li>
+		<li><a href="#">全部风格 <img class="rack" src="inspiration/imgs/case_03.png"/></a></li>
+		<li><a href="#">全部空间 <img class="rack" src="inspiration/imgs/case_03.png"/></a></li>
+	</ul>
+</nav>
+	<div class="nav"></div>
+<!--图片列表-->
+<banner class="banner">
+	<aside class="lazy1">
+		<div ng-repeat="l in left" repeat-finish="renderFinish()">
+			<a href="">
+				<img class="lazy" src="./inspiration/imgs/default.png" data-original="{{ l.img }}"/>
+			</a>
+		</div>
+	</aside>
+	<aside class="lazy2">
+		<div ng-repeat="r in right" repeat-finish="renderFinish()">
+			<a href="">
+				<img class="lazy" src="./inspiration/imgs/default.png" data-original="{{ r.img }}"/>
+			</a>
+		</div>
+	</aside>
+</banner>

@@ -39,6 +39,10 @@ app.config(['$routeProvider',function($routeProvider){
 		templateUrl: ' ./oneself/htmls/oneself.html',
 		controller:'oneselfCtrl'
 	})
+	.when('/minedol',{
+		templateUrl: ' ./oneself/htmls/minedol.html',
+		controller:'minedolCtrl'
+	})
 	.when('/search',{
 		templateUrl: ' ./search/htmls/search.html',
 		controller:'searchCtrl'

@@ -1,8 +1,138 @@
-.oneself{
-	width: 100%;
-	height: 100%;
-	color: lightgray;
-	font-size: 50px;
-	margin-top: 5rem;
-	background-color: black;
-}
+	/**{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+		box-sizing: border-box;
+	}*/
+	.oneself{
+		width: 100%;
+	}
+	.oneself header{
+		position: fixed;
+		z-index: 5;
+		width: 100%;
+		height: 4.5rem;
+		background: #F5F5F5;
+		/*border-bottom: 1px solid #AAAAAA;*/
+	}
+	.oneself header img{
+		vertical-align: middle;
+	}
+	.left3{
+		float: left;
+		width: 35%;
+		line-height: 4.5rem;
+		text-align: center;
+	}
+	.left3 a img{
+		width: 1.3rem;
+	}
+	.right3{
+		float: right;
+		width: 13%;
+		line-height: 4.5rem;
+	}
+	.lvjian{
+		width: 15%;
+	}
+	.xia{
+		width: 10%;
+	}
+	.l{
+		padding-left: 15%;
+	}
+	.oneself .banner{
+		width: 100%;
+	}
+	.oneself .banner::before{
+		content: "";
+		display: block;
+		height: 4.5rem;
+	}
+	.oneself .banner .topLi{
+		border-bottom: .1rem solid #D3D3D3;
+	}
+	.oneself .tops{
+		padding-top: 1rem;
+		width: 100%;
+		text-align: center;
+	}
+	.oneself .tops img{
+		width: 9rem;
+	}
+	.oneself .tops h3{
+		font-size: 1.6rem;
+		text-align: center;
+		padding:1.3rem 0;
+	}
+	.oneself .grey{
+		width: 100%;
+		color: #AAAAAA;
+		padding-bottom: 1rem;
+	}
+
+	.oneself .tops p{
+		text-align: center;
+	}
+	.oneself .topLi>ul{
+		width: 100%;
+		float: left;
+		overflow: auto;
+	}
+	.oneself .topLi>ul li{
+		float: left;
+		width: 25%;
+		padding: 2%;
+		text-align: center;
+	}
+	.oneself li a{
+		color: #333;
+	}
+	.oneself .topLi>ul li span{
+		font-size: 1rem;
+	}
+	.oneself .green{
+		padding:0 40%;
+		color: #79B23F;
+	}
+	.oneself .right{
+		float: right;
+		overflow: auto;
+	}
+	.oneself .li>ol li{
+		width: 100%;
+		padding:3.5% 5%;
+		border-bottom: .1rem solid #AAAAAA;
+	}
+	.oneself .li>ol li img{
+		width: 3%;
+	}
+	.oneself .bottom{
+		width: 100%;
+	}
+	.oneself .bottom>h3{
+		text-align: center;
+		line-height: 4rem;
+	}
+	.oneself .bottom ul{
+		width: 100%;
+		text-align: center;
+		float: left;
+		overflow: auto;
+	}
+	.oneself .bottom ul li{
+		float: left;
+		width: 25%;
+		padding: 3%;
+		text-align: center;
+	}
+	.oneself .bottom ul li img{
+		width: 80%;
+	}
+	.oneself .bottom ul li span{
+		padding: 2%;
+	}
+	.oneself .f{
+		height: 10rem;
+	}

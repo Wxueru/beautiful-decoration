@@ -1,5 +1,16 @@
 
 <div class="designer">
+	<header>
+		<a href="#">
+			<img src="../../img/arrow_left.png"/>
+		</a>
+		</span>
+		<p>设计师</p>
+		<a href="">
+			<img src="../../img/icon_share_green.png"/>
+		</a>
+
+	</header>
 	<div class="banner">
 		<div class="designer-img">
 			<section>
@@ -12,9 +23,9 @@
 				<p>预约设计</p>
 			</section>
 		</div>
-		<div class="designer-info">
-			<p>清羽设计宋小聪</p>
-			<p>服务城市：<span>成都</span></p>
+		<div class="designer-info" ng-repeat="i in info">
+			<p>{{ i.name }}</p>
+			<p>服务城市：<span>{{ i.city }}</span></p>
 		</div>
 		<ul>
 			<li>
@@ -45,7 +56,13 @@
 			</li>
 		</ul>
 	</nav>
-	<div class="module-img">
+	<div class="module-img" ng-repeat="s in show">
+		<section>
+			<img src="{{ s.img }}" alt="" />
+		</section>
+		<p>{{ s.description }}</p>
+	</div>
+	<!-- <div class="module-img">
 		<section>
 			<img src="http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup1%2FM00%2F09%2FC1%2FCgooa1aMlx-9qN8JAAwLVKYxFis912_1500x1500.jpg" alt="" />
 		</section>
@@ -68,11 +85,5 @@
 			<img src="http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup1%2FM00%2F09%2FC1%2FCgooa1aMlx-9qN8JAAwLVKYxFis912_1500x1500.jpg" alt="" />
 		</section>
 		<p>纷蓝</p>
-	</div>
-	<div class="module-img">
-		<section>
-			<img src="http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup1%2FM00%2F09%2FC1%2FCgooa1aMlx-9qN8JAAwLVKYxFis912_1500x1500.jpg" alt="" />
-		</section>
-		<p>纷蓝</p>
-	</div>
+	</div> -->
 </div>

@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="reset.css"/>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 		<script src="./libs/jquery-2.2.3.js" charset="utf-8"></script>
+		<script src="./libs/jquery.lazyload.js" charset="utf-8"></script>
         <script src="./libs/angular.js" charset="utf-8"></script>
         <script src="./libs/angular-route.js" charset="utf-8"></script>
         <script src="./libs/angular-css.js" charset="utf-8"></script>
@@ -18,10 +19,12 @@
 				width: 100%;
 				height: 4.5rem;
 				background: #fafafa;
+				z-index: 2;
 			}
 			.index .header a{
 				float: left;
 				width: 17%;
+				text-align: center;
 			}
 			.index .header-find{
 				float: left;
@@ -40,6 +43,9 @@
 				height: 3rem;
 				border: 1px solid lightblue;
 				border-radius:50% ;
+			}
+			.index .head span img{
+				width: 100%;
 			}
 			.index .search span{
 				width: 3rem;
@@ -70,9 +76,15 @@
 			}
 			.index footer a span{
 				margin-top: .5rem;
-				width: 2.5rem;
-				height: 2.5rem;
-				border: 1px solid lightcoral;
+				width: 2rem;
+				height: 2rem;
+				/*border: 1px solid lightcoral;*/
+			}
+			.index footer a span img{
+				width: 100%;
+			}
+			.index footer a span .index-img2{
+				display: none;
 			}
 		</style>
 	</head>
@@ -80,7 +92,7 @@
 		<div class="index">
 			<div class="header">
 				<a class="head" href="#oneself">
-					<span><img src="" alt="" /></span>
+					<span><img src="img/031.png" alt="" /></span>
 				</a>
 				<div class="header-find">
 					发现
@@ -92,22 +104,33 @@
 
 			<div ng-view></div>
 
-			<footer>
+			<footer class="footer">
 				<a href="#find">
-					<span></span><p>发现</p></a>
+					<span><img src="img/ico_03h.png" class="index-img1 index-ff" /><img src="img/ico_03l.png" class="index-img2 index-f" /></span>
+					<p>发现</p>
+				</a>
 				<a href="#case">
-					<span></span><p>案例</p></a>
+					<span><img src="img/ico_05h.png" class="index-img1 index-cc"/><img src="img/ico_05l.png" class="index-img2 index-c" /></span>
+					<p>案例</p>
+				</a>
 				<a href="#diary">
-					<span></span><p>日记</p></a>
+					<span><img src="img/ico_07h.png" class="index-img1 index-dd" /><img src="img/ico_07l.png" class="index-img2 index-d" /></span>
+					<p>日记</p>
+				</a>
 				<a href="#inspiration">
-					<span></span><p>灵感</p></a>
+					<span><img src="img/ico_09h.png" class="index-img1 index-ii" /><img src="img/ico_09l.png" class="index-img2 index-i" /></span>
+					<p>灵感</p>
+				</a>
 				<a href="#strategy">
-					<span></span><p>攻略</p></a>
+					<span><img src="img/ico_11h.png" class="index-img1 index-ss" /><img src="img/ico_11l.png" class="index-img2 index-s" /></span>
+					<p>攻略</p>
+				</a>
 			</footer>
 		</div>
 	</body>
 	<script src="route.js" charset="utf-8"></script>
 	<script src="oneself/js/oneself.js" charset="utf-8"></script>
+	<script src="oneself/js/minedol.js" charset="utf-8"></script>
 	<script src="search/js/search.js" charset="utf-8"></script>
     <script src="find/js/find.js" charset="utf-8"></script>
 	<script src="find/js/designer.js" charset="utf-8"></script>

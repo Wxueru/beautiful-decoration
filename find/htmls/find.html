@@ -25,7 +25,20 @@
 	</nav>
 	<div class="cyc">猜您喜欢</div>
 	<div class="works">
-		<section>
+		<section ng-repeat="d in find">
+			<div class="works-img">
+				<img src="{{ d.img }}" alt="" />
+			</div>
+			<div class="works-designer">
+				<p><a href="#designer"><img src="{{ d.icon }}" alt="" /></a></p>
+				<div>
+					<p>{{ d.title }}</p>
+					<p>{{ d.name }}{{ d.city }}</p>
+					<p>{{ d.style }}</p>
+				</div>
+			</div>
+		</section>
+		<!-- <section>
 			<div class="works-img">
 				<img src="http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup1%2FM00%2F09%2FC1%2FCgooa1aMlx-9qN8JAAwLVKYxFis912_1500x1500.jpg" alt="" />
 			</div>
@@ -63,20 +76,7 @@
 					<p>#中式 #实景图</p>
 				</div>
 			</div>
-		</section>
-		<section>
-			<div class="works-img">
-				<img src="http://zm.jia.com/watermark?src=http%3A%2F%2Fimgmall.tg.com.cn%2Fgroup1%2FM00%2F09%2FC1%2FCgooa1aMlx-9qN8JAAwLVKYxFis912_1500x1500.jpg" alt="" />
-			</div>
-			<div class="works-designer">
-				<p><a href="#designer"><img src="" alt="" /></a></p>
-				<div>
-					<p>民航花园</p>
-					<p>刘非[郑州]</p>
-					<p>#中式 #实景图</p>
-				</div>
-			</div>
-		</section>
+		</section> -->
 	</div>
 
 </div>
